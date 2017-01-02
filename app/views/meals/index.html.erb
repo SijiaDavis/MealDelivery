@@ -1,8 +1,21 @@
 <% @meals.each do |meal| %>
-<div class="booyah-box col-xs-10 offset-xs-1">
-  <%= image_tag meal.picture %>
-  <h2><%= meal.name %></h2>
+<div class="col-xs-3">
+<div class="booyah-box menu">
+  <div class="ribbon"><span><%= number_to_currency meal.cost %></span></div>
+  <%= image_tag meal.picture, class: "img-thumbnail" %>
+  <h3><%= meal.name %></h3>
   <p><%= meal.ingredient %></p>
-  <p><%= meal.category %></p>
+
+  <span class="tag tag-pill tag-default"><%= meal.category %></span>
+  <% if meal.high_protein? %>
+    <span class="tag tag-pill tag-info">High Protein</span>
+  <% end %>
+  <% if meal.low_carb? %>
+    <span class="tag tag-pill tag-warning">Low Carb</span>
+  <% end %>
+  <% if meal.vegan? %>
+    <span class="tag tag-pill tag-success">Vegan</span>
+  <% end %>
+</div>
 </div>
 <% end %>
