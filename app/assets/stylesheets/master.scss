@@ -1,0 +1,91 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+.body {
+  font-family: 'Cookie', cursive;
+}
+
+.navbar {
+  margin-bottom: 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-brand {
+  width:300px;
+}
+.navbar-brand img {
+   display:inline;
+}
+
+.fitness {
+  height:500px;
+  background:url("fitness.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color:white;
+}
+
+.fitness-inner {
+  width:50%;
+  margin-left:10%;
+  font-family: 'Pacifico', cursive;
+
+}
+
+.foodie {
+  height:500px;
+  background:url("food.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color:white;
+}
+
+.foodie-inner {
+  width:50%;
+  margin-left:20%;
+  font-family: 'Pacifico', cursive;
+}
+
+.vegan {
+  height:500px;
+  background:url("vegan.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color:white;
+}
+
+.vegan-inner {
+  width:70%;
+  margin-left:30%;
+  font-family: 'Pacifico', cursive;
+}
+
+.about {
+  height: 700px;
+  background: #A3E4D7;
+  color: white;
+}
+
+.about-inner {
+  font-family: 'Cookie', cursive;
+  text-align: center;
+}
+
+h1 {
+  padding-top:130px;
+  margin-top: 0;
+  font-size:5em;
+}
+
+.col-md-3 {
+  height:100px;
+}
+
+.about-title {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.btn {
+  font-size: 30px;
+  width:100px;
+}

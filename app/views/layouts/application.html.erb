@@ -9,6 +9,36 @@
   </head>
 
   <body>
+  
+  
+  
+  <nav class="navbar navbar-light bg-faded">
+     <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+     <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+       <%= link_to root_path, class: "navbar-brand" do %>
+       <img src="https://storage.designcrowd.com/design_img/573834/205536/205536_3788811_573834_image.png" height="30" width="30" alt="" />
+        Mama Kang's Kitchen
+       <% end %>
+    
+       <ul class="nav navbar-nav float-xs-right">   
+         <li class="nav-item">
+           <%= link_to new_meal_path, class: 'nav-link' do %>
+             <i class="fa fa-plus-circle"></i>
+             New Meal
+           <% end %>
+         </li>
+         <li class="nav-item">
+           <%= link_to "#", class: 'nav-link' do %>
+             <i class="fa fa-plus-circle"></i>
+             Menu
+           <% end %>
+         </li>
+       </ul>
+       
+     </div>
+   </nav>
+   
+   
     <%= yield %>
   </body>
 </html>
