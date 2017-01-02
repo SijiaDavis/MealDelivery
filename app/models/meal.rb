@@ -5,6 +5,8 @@ class Meal < ApplicationRecord
   validates :category, presence: true
   validates :cost, presence: true, numericality: {greater_than_or_equal_to: 0}
   
+  mount_uploader :picture, PictureUploader
+  
   CATEGORIES = {
     'breakfast' => 'Breakfast',
     'main' => 'main',
