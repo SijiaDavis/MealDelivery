@@ -1,11 +1,14 @@
-<h1>New Meal</h1>
-<%= simple_form_for @meal do |f| %>
-  <%= f.input :name %>
-  <%= f.input :ingredient %>
-  <%= f.input :category %>
-  <%= f.input :cost %>
-  <%= f.input :high_protein, as: :boolean %>
-  <%= f.input :low_carb, as: :boolean %>
-  <%= f.input :vegan, as: :boolean %>
-  <%= f.submit "Create" %>
-<% end %>
+<div class="booyah-box col-xs-10 offset-xs-1 meal">
+    <h2>Create New Meal</h2>
+    <br/>
+    <%= simple_form_for @meal do |f| %>
+    <%= f.input :name %>
+    <%= f.input :ingredient %>
+    <%= f.input :category, as: :select, collection: Meal::CATEGORIES %>
+    <%= f.input :cost %>
+    <%= f.input :high_protein, as: :boolean %>
+    <%= f.input :low_carb, as: :boolean %>
+    <%= f.input :vegan, as: :boolean %>
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+</div>

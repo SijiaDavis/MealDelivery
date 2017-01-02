@@ -10,8 +10,6 @@
 
   <body>
   
-  
-  
   <nav class="navbar navbar-light bg-faded">
      <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
      <div class="collapse navbar-toggleable-md" id="navbarResponsive">
@@ -23,13 +21,11 @@
        <ul class="nav navbar-nav float-xs-right">   
          <li class="nav-item">
            <%= link_to new_meal_path, class: 'nav-link' do %>
-             <i class="fa fa-plus-circle"></i>
              New Meal
            <% end %>
          </li>
          <li class="nav-item">
-           <%= link_to "#", class: 'nav-link' do %>
-             <i class="fa fa-plus-circle"></i>
+           <%= link_to meals_path, class: 'nav-link' do %>
              Menu
            <% end %>
          </li>
@@ -37,7 +33,6 @@
        
      </div>
    </nav>
-   
    
     <%= yield %>
   </body>
